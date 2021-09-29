@@ -1,14 +1,111 @@
 {
   "users": [
-    {"id": 0, "name": "Jacob Gutierrez", "nickname": "hexakymera", "email": "jacobgtzmtz@gmail.com", "urlAvatar": "./assets/images/users/1.png"},
-    {"id": 1, "name": "Tony Stark", "nickname": "Iron Man", "email": "tstark@avangers.com", "urlAvatar": "./assets/images/users/iron-man.png"},
-    {"id": 2, "name": "Thor Odinson", "nickname": "Thor", "email": "todison@avangers.com", "urlAvatar": "./assets/images/users/thor.png"},
-    {"id": 3, "name": "Henry Pym", "nickname": "Ant-Man", "email": "hpym@avangers.com", "urlAvatar": "./assets/images/users/ant-man.png"},
-    {"id": 4, "name": "Bruce Banner", "nickname": "Hulk", "email": "bbanner@avangers.com", "urlAvatar": "./assets/images/users/hulk.png"},
-    {"id": 5, "name": "Steve Rogers", "nickname": "Captain America", "email": "srogers@avangers.com", "urlAvatar": "./assets/images/users/captain-america.png"},
-    {"id": 6, "name": "Natasha Romanoff", "nickname": "Black Widow", "email": "nromanoff@avangers.com", "urlAvatar": "./assets/images/users/black-widow.png"},
-    {"id": 7, "name": "Peter Parker", "nickname": "Spider Man", "email": "pparker@avangers.com", "urlAvatar": "./assets/images/users/spider-man.png"},
-    {"id": 8, "name": "Wade Winston Wilson", "nickname": "Deadpool", "email": "wwwilson@avangers.com", "urlAvatar": "./assets/images/users/deadpool.png"},
-    {"id": 9, "name": "Nicholas Joseph Fury", "nickname": "Nick Fury", "email": "njfury@avangers.com", "urlAvatar": "./assets/images/users/nickfury.png"}
+    {
+      "id": 1,
+      "name": "Tony Stark",
+      "nickname": "Iron Man",
+      "email": "tstark@avangers.com",
+      "urlAvatar": "./assets/images/users/iron-man.png"
+    },
+    {
+      "id": 2,
+      "name": "Thor Odinson",
+      "nickname": "Thor",
+      "email": "todison@avangers.com",
+      "urlAvatar": "./assets/images/users/thor.png"
+    },
+    {
+      "id": 3,
+      "name": "Henry Pym",
+      "nickname": "Ant-Man",
+      "email": "hpym@avangers.com",
+      "urlAvatar": "./assets/images/users/ant-man.png"
+    },
+    {
+      "id": 4,
+      "name": "Bruce Banner",
+      "nickname": "Hulk",
+      "email": "bbanner@avangers.com",
+      "urlAvatar": "./assets/images/users/hulk.png"
+    },
+    {
+      "id": 5,
+      "name": "Steve Rogers",
+      "nickname": "Captain America",
+      "email": "srogers@avangers.com",
+      "urlAvatar": "./assets/images/users/captain-america.png"
+    },
+    {
+      "id": 6,
+      "name": "Natasha Romanoff",
+      "nickname": "Black Widow",
+      "email": "nromanoff@avangers.com",
+      "urlAvatar": "./assets/images/users/black-widow.png"
+    },
+    {
+      "id": 7,
+      "name": "Peter Parker",
+      "nickname": "Spider Man",
+      "email": "pparker@avangers.com",
+      "urlAvatar": "./assets/images/users/spider-man.png"
+    },
+    {
+      "id": 8,
+      "name": "Wade Winston Wilson",
+      "nickname": "Deadpool",
+      "email": "wwwilson@avangers.com",
+      "urlAvatar": "./assets/images/users/deadpool.png"
+    },
+    {
+      "id": 9,
+      "name": "Nicholas Joseph Fury",
+      "nickname": "Nick Fury",
+      "email": "njfury@avangers.com",
+      "urlAvatar": "./assets/images/users/nickfury.png"
+    },
+    {
+      "id": 10,
+      "name": "Jacob Gutierrez",
+      "nickname": "hexakymera",
+      "email": "jacobgtzmtz@gmail.com",
+      "urlAvatar": "./assets/images/users/1.png"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Código Limpio",
+      "author": "Robert C. Martin",
+      "precio": 48.4,
+      "imageUrl": "./assets/images/books/codigo-limpio.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Ingeniería de Software",
+      "author": "Roger S.Pressman",
+      "precio": 164.75,
+      "imageUrl": "./assets/images/books/ingenieria-de-software.jpg"
+    },
+    {
+      "id": 3,
+      "title": "No me hagas pensar",
+      "author": "Steve Krug",
+      "precio": 19.71,
+      "imageUrl": "./assets/images/books/no-me-hagas-pensar.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Algoritmia",
+      "author": "Franck Ebel",
+      "precio": 28.40,
+      "imageUrl": "./assets/images/books/algoritmia.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Aprende a programar en C",
+      "author": "A. M. VozmedianoFranck Ebel",
+      "precio": 28.40,
+      "imageUrl": "./assets/images/books/aprende-a-programar-en-c.jpg"
+    }
   ]
 }
