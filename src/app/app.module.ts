@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './shared/nav-bar/nav-bar.component';
 import { LibrosComponent } from './views/libros/libros.component';
 import { UsuariosComponent } from './views/usuarios/usuarios.component';
+import { LibroDetallesComponent } from './views/libros/libro-detalles/libro-detalles.component';
+import { UsuarioDetallesComponent } from './views/usuarios/usuario-detalles/usuario-detalles.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { UsuariosComponent } from './views/usuarios/usuarios.component';
     NavBarComponent,
     LibrosComponent,
     UsuariosComponent,
+    LibroDetallesComponent,
+    UsuarioDetallesComponent,
   ],
   imports: [
     BrowserModule,
