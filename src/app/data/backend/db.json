@@ -97,14 +97,14 @@
       "id": 4,
       "title": "Algoritmia",
       "author": "Franck Ebel",
-      "precio": 28.40,
+      "precio": 28.4,
       "imageUrl": "./assets/images/books/algoritmia.jpg"
     },
     {
       "id": 5,
       "title": "Aprende a programar en C",
       "author": "A. M. VozmedianoFranck Ebel",
-      "precio": 28.40,
+      "precio": 28.4,
       "imageUrl": "./assets/images/books/aprende-a-programar-en-c.jpg"
     }
   ]

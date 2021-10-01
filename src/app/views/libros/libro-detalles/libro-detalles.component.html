@@ -1,1 +1,43 @@
-<p>libro-detalles works!</p>
+<h2>Detalles del libro</h2>
+<div class="row">
+  <div class="col-6">
+    <div class="card" style="width: 18rem">
+      <img [src]="libroDetails.imageUrl" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">{{ libroDetails.title }}</h5>
+        <p class="card-text">
+          <span>{{ libroDetails.author }}</span>
+          <br />
+          <span>{{ libroDetails.precio | currency }}</span>
+        </p>
+        <button class="btn btn-primary float-end">Editar</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-6"></div>
+</div>
+
+<!-- <div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="titulo" class="col-form-label">Titulo</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="titulo" class="form-control">
+  </div>
+</div>
+<div class="row g-3 align-items-center mt-3">
+  <div class="col-auto">
+    <label for="autor" class="col-form-label">Autor</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="autor" class="form-control">
+  </div>
+</div>
+<div class="row g-3 align-items-center mt-3">
+  <div class="col-auto">
+    <label for="precio" class="col-form-label">Autor</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="autor" class="form-control">
+  </div>
+</div> -->

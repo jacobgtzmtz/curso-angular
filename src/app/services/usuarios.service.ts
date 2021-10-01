@@ -16,4 +16,12 @@ export class UsuariosService {
   public obtenerUsarios(): Observable<IUsuario[]> {
     return this.$http.get<IUsuario[]>(this.EndPoint);
   }
+
+  /**
+   * obtenerUsuarioPorId
+   * parameters: parametroId: number
+   */
+   public obtenerUsuarioPorId(parametroId: number): Observable<IUsuario> {
+    return this.$http.get<IUsuario>(this.EndPoint + '/' + parametroId);
+  }
 }

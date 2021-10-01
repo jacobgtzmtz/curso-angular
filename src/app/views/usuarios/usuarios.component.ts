@@ -13,18 +13,27 @@ export class UsuariosComponent implements OnInit {
   constructor(private $usuariosService: UsuariosService) {}
 
   ngOnInit(): void {
-    this.obtenerLibros();
+    this.obtenerUsuarios();
     console.log(this.listaDeUsuarios);
   }
 
   /**
    * getAllBooks
    */
-  public obtenerLibros() {
+  public obtenerUsuarios() {
     this.$usuariosService.obtenerUsarios().subscribe((usuarios) => {
       usuarios.forEach((usuario) => {
         this.listaDeUsuarios.push(usuario);
       });
     });
+  }
+
+  /**
+   * obtenerLibros
+   */
+   public obtenerUsuarioPorId(parametroId: number) {
+    this.$usuariosService.obtenerUsuarioPorId(parametroId).subscribe(libro => {
+      console.log(libro);
+    })
   }
 }

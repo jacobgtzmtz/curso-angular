@@ -1,5 +1,5 @@
 export interface ILibro {
-  id: number,
+  id?: number,
   title: string,
   author: string,
   precio: number,

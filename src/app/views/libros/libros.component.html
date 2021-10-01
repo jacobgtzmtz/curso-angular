@@ -1,1 +1,26 @@
-<p>libros works!</p>
+<h2>Lista de libros</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Titulo</th>
+      <th>Autor</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let libro of listaDeLibros">
+      <td>{{ libro.id }}</td>
+      <td>{{ libro.title }}</td>
+      <td>{{ libro.author }}</td>
+      <td>
+        <button type="button" class="btn btn-outline-primary me-2" [routerLink]="['/libros', libro.id]">Ver</button>
+        <button type="button" class="btn btn-outline-danger" (click) = "borrarLibro(libro.id)">Borrar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- <hr>
+<button (click) = "agregarLibro()">Agregar</button> -->
