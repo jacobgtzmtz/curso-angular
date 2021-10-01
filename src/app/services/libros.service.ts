@@ -35,9 +35,9 @@ export class LibrosService {
   /**
    * agregarLibro
    */
-  public actualizarLibro(parameterID: number, libroActualizado: ILibro) {
+  public actualizarLibro(parameterID: number, libroActualizado: ILibro): Observable<ILibro> {
 
-    return this.$http.put(this.EndPoint + '/' + parameterID, libroActualizado);
+    return this.$http.patch<ILibro>(this.EndPoint + '/' + parameterID, libroActualizado);
   }
 
   /**

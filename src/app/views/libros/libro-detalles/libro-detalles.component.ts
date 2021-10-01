@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ILibro } from 'src/app/models/ilibro';
 import { LibrosService } from 'src/app/services/libros.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-libro-detalles',
@@ -9,8 +10,18 @@ import { LibrosService } from 'src/app/services/libros.service';
   styles: [],
 })
 export class LibroDetallesComponent implements OnInit {
+  @ViewChild('miFormulario') miFormulario!: NgForm;
+
   public idLibro: number = 0;
-  public libroDetails!: ILibro;
+  public libroDetails: ILibro = {
+    title: '',
+    author: '',
+    precio: 0,
+    imageUrl: ''
+  };
+  public modoEdition: boolean = false;
+
+
 
   constructor(
     private $librosService: LibrosService,
@@ -52,17 +63,12 @@ export class LibroDetallesComponent implements OnInit {
    * actualizarLibro
    */
   public actualizarLibro() {
-    const libroActualizado = {
-      title: 'tes updated',
-      author: 'test updated',
-      precio: 0,
-      imageUrl: '',
-    };
-    const parameterId = 6;
     this.$librosService
-      .actualizarLibro(parameterId, libroActualizado)
+      .actualizarLibro(this.idLibro, this.miFormulario.value)
       .subscribe((res) => {
-        console.log(res);
+       console.log(res);
+       this.libroDetails = res;
       });
+    this.modoEdition= false;
   }
 }

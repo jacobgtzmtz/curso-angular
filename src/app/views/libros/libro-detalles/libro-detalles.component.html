@@ -1,5 +1,6 @@
 <h2>Detalles del libro</h2>
 <div class="row">
+  <!--Seccion para mostrar los detalles del libro-->
   <div class="col-6">
     <div class="card" style="width: 18rem">
       <img [src]="libroDetails.imageUrl" class="card-img-top" />
@@ -10,34 +11,71 @@
           <br />
           <span>{{ libroDetails.precio | currency }}</span>
         </p>
-        <button class="btn btn-primary float-end">Editar</button>
+        <button
+          class="btn btn-primary float-end"
+          (click)="modoEdition = true"
+          [disabled]="modoEdition"
+        >
+          Editar
+        </button>
       </div>
     </div>
   </div>
-  <div class="col-6"></div>
-</div>
 
-<!-- <div class="row g-3 align-items-center">
-  <div class="col-auto">
-    <label for="titulo" class="col-form-label">Titulo</label>
-  </div>
-  <div class="col-auto">
-    <input type="text" id="titulo" class="form-control">
+  <!--Seccion para el formulario de edición, solo se muestra si se encuentra en modo edición activado-->
+  <div class="col" *ngIf="modoEdition === true">
+    <h3>Editar libro</h3>
+    <form (ngSubmit)="actualizarLibro()" #miFormulario="ngForm">
+      <div class="row g-2 align-items-center">
+        <!--Campo titulo-->
+        <div class="col-auto">
+          <label for="titulo" class="col-form-label">Titulo</label>
+        </div>
+        <div class="col-auto">
+          <input
+            type="text"
+            name="title"
+            class="form-control"
+            [ngModel]="libroDetails.title"
+          />
+        </div>
+      </div>
+      <!--Campo autor-->
+      <div class="row g-2 align-items-center mt-3">
+        <div class="col-auto">
+          <label for="autor" class="col-form-label">Autor</label>
+        </div>
+        <div class="col-auto">
+          <input
+            type="text"
+            name="author"
+            class="form-control"
+            [ngModel]="libroDetails.author"
+          />
+        </div>
+      </div>
+      <!--Campo precio-->
+      <div class="row g-2 align-items-center mt-3">
+        <div class="col-auto">
+          <label for="precio" class="col-form-label">Precio</label>
+        </div>
+        <div class="col-auto">
+          <input
+            type="number"
+            name="precio"
+            class="form-control"
+            [ngModel]="libroDetails.precio"
+          />
+        </div>
+      </div>
+      <!--Boton de guardar-->
+      <div class="row mt-3">
+        <div class="col">
+          <button class="btn btn-primary float-end" (click)="actualizarLibro()">
+            Guardar
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
-<div class="row g-3 align-items-center mt-3">
-  <div class="col-auto">
-    <label for="autor" class="col-form-label">Autor</label>
-  </div>
-  <div class="col-auto">
-    <input type="text" id="autor" class="form-control">
-  </div>
-</div>
-<div class="row g-3 align-items-center mt-3">
-  <div class="col-auto">
-    <label for="precio" class="col-form-label">Autor</label>
-  </div>
-  <div class="col-auto">
-    <input type="text" id="autor" class="form-control">
-  </div>
-</div> -->

@@ -10,6 +10,8 @@ import { LibrosComponent } from './views/libros/libros.component';
 import { UsuariosComponent } from './views/usuarios/usuarios.component';
 import { LibroDetallesComponent } from './views/libros/libro-detalles/libro-detalles.component';
 import { UsuarioDetallesComponent } from './views/usuarios/usuario-detalles/usuario-detalles.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PortadaComponent } from './views/portada/portada.component';
 
 @NgModule({
   declarations: [
@@ -19,11 +21,13 @@ import { UsuarioDetallesComponent } from './views/usuarios/usuario-detalles/usua
     UsuariosComponent,
     LibroDetallesComponent,
     UsuarioDetallesComponent,
+    PortadaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
